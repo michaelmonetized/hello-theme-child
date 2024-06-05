@@ -1,6 +1,6 @@
 # Jennings Custom Homes - Custom Hello Elementor Child Theme
 
-[ ] Setup Repo
+[x] Setup Repo
 
 [x] Customize functions.php
 
