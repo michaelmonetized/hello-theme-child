@@ -2,10 +2,10 @@
 
 [ ] Setup Repo
 
-[ ] Customize functions.php
+[x] Customize functions.php
 
-[ ] Switch to theme
+[x] Switch to theme
 
-[ ] Run Through Customizer
+[x] Run Through Customizer
 
-[ ] Run Through Elementor Site Settings
+[x] Run Through Elementor Site Settings

@@ -28,4 +28,5 @@ function jch_scripts_styles() {
 	);
 
 }
+
 add_action( 'wp_enqueue_scripts', 'jch_scripts_styles', 20 );
