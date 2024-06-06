@@ -1,18 +1,4 @@
-/*
-Theme Name: Jennings Custom Homes
-Theme URI: https://github.com/michaelmonetized/jch/
-Description: Custom Hello Elementor Child Theme for Jennings Custom Homes
-Author: Michael C Hurley
-Author URI: https://www.michaelchurley.com/
-Template: hello-elementor
-Version: 2.0.0
-Text Domain: jch
-License: GNU General Public License v3 or later.
-License URI: https://www.gnu.org/licenses/gpl-3.0.html
-Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
-*/
-
-html body[class*=elementor-kit] {
+html,body,:root,html body[class*=elementor-kit],*,:before,:after {
   --e-global-color-primary: #00539B;
   --e-global-color-secondary: #54595F;
   --e-global-color-text: #383838;
@@ -38,141 +24,195 @@ html body[class*=elementor-kit] {
   --e-global-typography-accent-font-family: "Georgia";
   --e-global-typography-accent-font-weight: 500;
   --e-global-typography-accent-line-height: 1.382em;
-  color: var( --e-global-color-text );
-  font-family: "Helvetica", sans-serif;
+  min-height: 0;
+  min-width: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff33 #ffffff77
+}
+
+html, body, :root, html body[class*=elementor-kit] {
+  max-width: 100dvw;
+  max-height: 100dvh;
+  overflow: auto;
+  overflow-y: auto;
+  overflow-x: auto;
   font-size: 21px;
   line-height: 1.382em;
-  background-color: #FAFAFA;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: thin
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff00
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff00
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff00
+}
+
+html body[class*=elementor-kit] {
+  background-color: var(--e-global-color-9c54de4);
+  color: var( --e-global-color-text );
+  font-family: var(--e-global-typography-primary-font-family);
+  font-size: 21px;
+  line-height: 1.382em
 }
 
 html body[class*=elementor-kit] p {
-  margin-bottom: 0em;
+  margin-bottom: 0
 }
 
 html body[class*=elementor-kit] a {
   color: var( --e-global-color-primary );
-  font-family: "Georgia", sans-serif;
+  font-family: var(--e-global-typography-primary-font-family)
 }
 
 html body[class*=elementor-kit] h1 {
   color: var( --e-global-color-text );
-  font-family: "Georgia", sans-serif;
+  font-family: var(--e-global-typography-secondary-font-family);
   font-size: 2.1em;
-  line-height: 1.382em;
+  line-height: 1.382em
 }
 
 html body[class*=elementor-kit] h2 {
   color: var( --e-global-color-text );
-  font-family: "Georgia", sans-serif;
+  font-family: var(--e-global-typography-secondary-font-family);
   font-size: 1.8em;
-  line-height: 1.382em;
+  line-height: 1.382em
 }
 
 html body[class*=elementor-kit] h3 {
   color: var( --e-global-color-text );
-  font-family: "Georgia", sans-serif;
+  font-family: var(--e-global-typography-secondary-font-family);
   font-size: 1.4em;
-  line-height: 1.382em;
+  line-height: 1.382em
 }
 
 html body[class*=elementor-kit] h4 {
   color: var( --e-global-color-text );
-  font-family: "Georgia", sans-serif;
+  font-family: var(--e-global-typography-secondary-font-family);
   font-size: 1.3em;
-  line-height: 1.382em;
+  line-height: 1.382em
 }
 
 html body[class*=elementor-kit] h5 {
   color: var( --e-global-color-text );
-  font-family: "Georgia", sans-serif;
+  font-family: var(--e-global-typography-secondary-font-family);
   font-size: 1.2em;
-  line-height: 1.382em;
+  line-height: 1.382em
 }
 
 html body[class*=elementor-kit] h6 {
   color: var( --e-global-color-text );
-  font-family: "Georgia", sans-serif;
+  font-family: var(--e-global-typography-secondary-font-family);
   font-size: 1.1em;
-  line-height: 1.382em;
+  line-height: 1.382em
 }
 
-html body[class*=elementor-kit] button,html body[class*=elementor-kit] input[type="button"],html body[class*=elementor-kit] input[type="submit"],html body[class*=elementor-kit] .elementor-button {
-  font-family: "Helvetica", sans-serif;
+html body[class*=elementor-kit] button,
+html body[class*=elementor-kit] input[type=button],
+html body[class*=elementor-kit] input[type=submit],
+html body[class*=elementor-kit] .elementor-button {
+  font-family: var(--e-global-typography-primary-font-family);
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.382em;
   color: var( --e-global-color-044ef24 );
   background-color: var( --e-global-color-accent );
   border-style: none;
-  border-radius: 0em 0em 0em 0em;
-  padding: 1em 2em 1em 2em;
+  border-radius: 0 0 0 0;
+  padding: 1em 2em
 }
 
-html body[class*=elementor-kit] button:hover,html body[class*=elementor-kit] button:focus,html body[class*=elementor-kit] input[type="button"]:hover,html body[class*=elementor-kit] input[type="button"]:focus,html body[class*=elementor-kit] input[type="submit"]:hover,html body[class*=elementor-kit] input[type="submit"]:focus,html body[class*=elementor-kit] .elementor-button:hover,html body[class*=elementor-kit] .elementor-button:focus {
+html body[class*=elementor-kit] button:hover,
+html body[class*=elementor-kit] button:focus,
+html body[class*=elementor-kit] input[type=button]:hover,
+html body[class*=elementor-kit] input[type=button]:focus,
+html body[class*=elementor-kit] input[type=submit]:hover,
+html body[class*=elementor-kit] input[type=submit]:focus,
+html body[class*=elementor-kit] .elementor-button:hover,
+html body[class*=elementor-kit] .elementor-button:focus {
   color: var( --e-global-color-044ef24 );
-  background-color: #C0690E;
-  border-radius: 0px 0px 0px 0px;
+  background-color: var( --e-global-color-907e796 );
+  border-radius: 0 0 0 0
 }
 
 html body[class*=elementor-kit] label {
   color: var( --e-global-color-text );
-  font-size: 1em;
+  font-size: 1em
 }
 
-html body[class*=elementor-kit] input:not([type="button"]):not([type="submit"]),html body[class*=elementor-kit] textarea,html body[class*=elementor-kit] .elementor-field-textual {
+html body[class*=elementor-kit] input:not([type=button]):not([type=submit]),html body[class*=elementor-kit] textarea,html body[class*=elementor-kit] .elementor-field-textual {
   font-size: 1em;
   color: var( --e-global-color-text );
   accent-color: var( --e-global-color-accent );
   background-color: var( --e-global-color-044ef24 );
   border-style: solid;
-  border-width: 1px 1px 1px 1px;
+  border-width: 1px;
   border-color: var( --e-global-color-secondary );
-  border-radius: .5em .5em .5em .5em;
-  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 0;
+  padding: .5em 1em
 }
 
-html, body {
-  padding:0;
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1;
+html body[class*=elementor-kit] .small-headings,html body[class*=elementor-kit] .small-headings * {
+  font-size: 16px;
+  line-height: 1
 }
 
-.small-headings * {
-  font-size: 1rem;
-  line-height: 1;
-}
-
-.elementor-widget-text-editor h1:not(:first-child),
-.elementor-widget-text-editor h2:not(:first-child),
-.elementor-widget-text-editor h3:not(:first-child),
-.elementor-widget-text-editor h4:not(:first-child),
-.elementor-widget-text-editor h5:not(:first-child),
-.elementor-widget-text-editor h6:not(:first-child),
-.elementor-widget-text-editor  p:not(:first-child) {
+html body[class*=elementor-kit] .elementor-widget-text-editor h1:not(:first-child),
+html body[class*=elementor-kit] .elementor-widget-text-editor h2:not(:first-child),html body[class*=elementor-kit] .elementor-widget-text-editor h3:not(:first-child),
+html body[class*=elementor-kit] .elementor-widget-text-editor h4:not(:first-child),
+html body[class*=elementor-kit] .elementor-widget-text-editor h5:not(:first-child),
+html body[class*=elementor-kit] .elementor-widget-text-editor h6:not(:first-child),
+html body[class*=elementor-kit] .elementor-widget-text-editor p:not(:first-child) {
   margin: 1em 0 0;
   padding: 0;
+  line-height: 1.382em;
 }
 
-:root, html, body, *, *:before, *:after {
-  scrollbar-width: 1px;
-  scrollbar-color: #ffffff00 #ffffff00;
-  
+html body[class*=elementor-kit] #jch-top-bar {
+  max-width: 100dvw
 }
+@media(max-width: 1024px) {
+  html body[class*=elementor-kit] #mobile-bar {
+    min-width: 100dvw;
+    width: 100dvw;
+    max-width: 100dvw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-::-webkit-scrollbar {
-  display: none;
-  width: 1px;;
-}
+  html body[class*=elementor-kit] #mobile-bar > div {
+    width: fit-content;
+  }
 
-::-webkit-scrollbar-track {
-  background: #ffffff00;
-}
+  html body[class*=elementor-kit] #mobile-bar > div.elementor-widget.elementor-widget-button div.elementor-button-wrapper a.elementor-button.elementor-button-link.elementor-size-sm {
+    font-size: 42px;
+    line-height: 1;
+    fill: var(--e-global-color-primary);
+    color: var(--e-global-color-primary);
+    background-color: transparent;
+    padding: 0;
+  }
 
-::-webkit-scrollbar-thumb {
-  background: #ffffff00;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #ffffff00;
+  html body[class*=elementor-kit] #mobile-bar > div.elementor-widget.elementor-widget-button div.elementor-button-wrapper a.elementor-button.elementor-button-link.elementor-size-sm:hover,
+  html body[class*=elementor-kit] #mobile-bar > div.elementor-widget.elementor-widget-button div.elementor-button-wrapper a.elementor-button.elementor-button-link.elementor-size-sm:focus,
+  html body[class*=elementor-kit] #mobile-bar > div.elementor-widget.elementor-widget-button div.elementor-button-wrapper a.elementor-button.elementor-button-link.elementor-size-sm:active {
+    font-size: 42px;
+    line-height: 1;
+    fill: var(--e-global-color-2b882d4);
+    color: var(--e-global-color-2b882d4);
+    background-color: transparent;
+    padding: 0;
+  }
 }
